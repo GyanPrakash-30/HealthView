@@ -1,0 +1,37 @@
+<!-- medical_dashboard.svg -->
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="900" height="600" fill="#f9fafe"/>
+  <rect x="60" y="80" width="680" height="440" rx="20" fill="#ffffff" stroke="#d0e2f2" stroke-width="2"/>
+
+  <!-- Header -->
+  <rect x="60" y="80" width="680" height="60" fill="#2196f3"/>
+  <text x="80" y="118" font-size="24" fill="#ffffff" font-family="Arial, sans-serif">HealthTrack Dashboard</text>
+
+  <!-- Pie Chart -->
+  <circle cx="200" cy="300" r="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="6"/>
+  <path d="M200,300 L200,220 A80,80 0 0,1 270,270 Z" fill="#4caf50"/>
+  <path d="M200,300 L270,270 A80,80 0 0,1 230,370 Z" fill="#ff9800"/>
+  <path d="M200,300 L230,370 A80,80 0 0,1 200,380 Z" fill="#f44336"/>
+
+  <!-- Line Graph -->
+  <polyline points="420,380 460,320 500,340 540,280 580,300 620,260"
+            fill="none" stroke="#4caf50" stroke-width="4"/>
+  <circle cx="420" cy="380" r="5" fill="#4caf50"/>
+  <circle cx="460" cy="320" r="5" fill="#4caf50"/>
+  <circle cx="500" cy="340" r="5" fill="#4caf50"/>
+  <circle cx="540" cy="280" r="5" fill="#4caf50"/>
+  <circle cx="580" cy="300" r="5" fill="#4caf50"/>
+  <circle cx="620" cy="260" r="5" fill="#4caf50"/>
+  <text x="420" y="400" font-size="12" fill="#666">Jan</text>
+  <text x="460" y="400" font-size="12" fill="#666">Feb</text>
+  <text x="500" y="400" font-size="12" fill="#666">Mar</text>
+  <text x="540" y="400" font-size="12" fill="#666">Apr</text>
+  <text x="580" y="400" font-size="12" fill="#666">May</text>
+  <text x="620" y="400" font-size="12" fill="#666">Jun</text>
+
+  <!-- Health Tips Box -->
+  <rect x="420" y="180" width="280" height="80" rx="10" fill="#e8f5e9" stroke="#81c784" stroke-width="1.5"/>
+  <text x="440" y="210" font-size="16" fill="#2e7d32" font-weight="bold">Health Suggestion</text>
+  <text x="440" y="230" font-size="14" fill="#2e7d32">✔️ Drink more water</text>
+  <text x="440" y="250" font-size="14" fill="#2e7d32">✔️ Walk 30 mins/day</text>
+</svg>
