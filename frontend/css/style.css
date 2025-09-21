@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .hamburger {
   display: none;
   justify-content: center;
@@ -26,6 +32,7 @@ body {
   line-height: 1.6;
   background-color: #e9ecef;
   color: #333;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -95,6 +102,7 @@ body {
   min-width: 280px;
   padding: 1rem;
 }
+
 .hero-text h1 {
   font-size: 4rem;
   color: #0d47a1;
@@ -103,12 +111,15 @@ body {
   margin: 1rem 0;
   font-size: 2rem;
 }
+.ctx-btn-wrapper {
+  display: flex;
+  gap: 16px;
+}
 .hero .btn-primary,
 .hero .btn-secondary {
   padding: 0.7rem 1.4rem;
   border: none;
   border-radius: 5px;
-  margin-right: 10px;
   font-size: 1.5rem;
   cursor: pointer;
   text-decoration: none;
@@ -270,8 +281,15 @@ footer a:hover {
     display: inline-block;
     font-size: 30px;
   }
+  .hero-text {
+    padding: 0;
+  }
+  .hero-text p {
+    font-size: 22px;
+  }
+
   .hero-text h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
   .navbar nav ul {
     gap: 0;
@@ -299,6 +317,9 @@ footer a:hover {
     transform: translateX(0%);
   }
 
+  section {
+    padding: 16px !important;
+  }
   .hamburger:hover {
     filter: brightness(0.9);
   }
@@ -309,5 +330,11 @@ footer a:hover {
     cursor: pointer;
     transition: 0.3s ease;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  .ctx-btn-wrapper {
+    flex-direction: column;
+  }
+  .hero .btn-secondary {
+    white-space: nowrap;
   }
 }
